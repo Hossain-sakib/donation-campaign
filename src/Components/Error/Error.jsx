@@ -3,7 +3,7 @@
 const Error = () => {
     return (
         <div>
-            this is error page
+            error
         </div>
     );
 };

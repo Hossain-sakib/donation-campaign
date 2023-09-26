@@ -3,6 +3,7 @@ import MainLayout from "../MainLayout/MainLayout";
 import Error from "../Components/Error/Error";
 import Home from "../Components/Home/Home"
 import Donation from "../Components/Pages/Donation/Donation";
+import DonationDetails from "../Components/Pages/Details/DonationDetails";
 
 
 const router = createBrowserRouter([
@@ -14,14 +15,16 @@ const router = createBrowserRouter([
         {
             path:"/",
             element:<Home></Home>,
-            loader:()=>fetch('/public/Donation.json'),
+            loader:()=>fetch('/public/Donation.json')
         },
         {
-          path:"/donation_details"
+          path:"/donation_details/:id",
+          element:<DonationDetails></DonationDetails>,
+          loader:()=>fetch('/public/Donation.json')
         },
         {
           path:"/donation",
-          element:<Donation></Donation>
+          element:<Donation></Donation>,
         },
       ]
     },

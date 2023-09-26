@@ -1,14 +1,13 @@
-import Navbar from "./Navbar";
 
 const Header = () => {
     return (
         <div>
-
-            <div className="w-full h-full hero" style={{ backgroundImage: 'url(https://i.ibb.co/QQJH9TC/Rectangle-4281.png)' }}>
+            
+            <div className="hero" style={{ backgroundImage: 'url(https://i.ibb.co/QQJH9TC/Rectangle-4281.png)' }}>
+           
                 <div className="hero-overlay bg-white bg-opacity-80"></div>
                 <div>
-                    <Navbar></Navbar>
-                    <div className="text-center flex flex-col items-center md:px-10 py-32 space-y-6">
+                    <div className="text-center flex flex-col items-center md:px-10 py-40 space-y-6">
                         <p className="text-lg md:text-3xl lg:text-5xl font-semibold">I Grow By Helping People In Need</p>
                         <div>
                             <input className="w-56 px-4 py-2 border rounded-l-lg text-sm font-medium" type="search" placeholder="Search here..." />
