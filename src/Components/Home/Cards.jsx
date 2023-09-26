@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Card from "./Card";
 
 
@@ -12,5 +13,9 @@ const Cards = ({ homeCards }) => {
         </div>
     );
 };
+
+Cards.propTypes ={
+    homeCards: PropTypes.object.isRequired,
+}
 
 export default Cards;

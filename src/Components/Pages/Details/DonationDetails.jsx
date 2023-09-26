@@ -15,7 +15,7 @@ const DonationDetails = () => {
     }, [id,details]);
    console.log(idDetail)
     return (
-        <div>
+        <div className="container flex justify-center pt-10 px-8 h-screen">
             <Details idDetail={idDetail}></Details>
         </div>
     );

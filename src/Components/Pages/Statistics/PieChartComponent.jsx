@@ -1,14 +1,13 @@
-
+import PropTypes from 'prop-types';
 import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
 
 const PieChartComponent = ({ donations }) => {
-    console.log(donations[0]);
+
     const data = [
         { name: 'Your Donation', value: donations[1] },
         { name: 'Total Donation', value: donations[0] }
     ];
 
-    const total = data.reduce((acc, item) => acc + item.value, 0);
 
     const renderLabel = ({
         cx, cy, midAngle, innerRadius, outerRadius, percent
@@ -50,6 +49,10 @@ const PieChartComponent = ({ donations }) => {
             </PieChart>
         </div>
     );
+}
+
+PieChartComponent.propTypes ={
+    donations: PropTypes.array.isRequired,
 }
 
 export default PieChartComponent;
