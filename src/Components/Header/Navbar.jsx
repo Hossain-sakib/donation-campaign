@@ -1,9 +1,9 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
     return (
         <div>
             <div className="navbar flex justify-between">
-                <img className="w-32" src="https://i.ibb.co/BGRXpYP/Logo.png" alt="" />
+                <Link to="/"><img className="w-32" src="https://i.ibb.co/BGRXpYP/Logo.png" alt="" /></Link>
                 <div>
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
