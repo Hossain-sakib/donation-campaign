@@ -30,8 +30,8 @@ const Details = ({ idDetail }) => {
             }
             else{
                 swal({
-                    title: "Please donate in other options",
-                    text: "You already donated in this option",
+                    title: "Please donate in another option!",
+                    text: "You have already donated in this option",
                     icon: "error",
                 });
             }
